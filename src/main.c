@@ -29,7 +29,7 @@ void task2(){
         while(1){
                 lcdClear(lcd);
                 lcdPosition(lcd, 0, 0);
-                int value = wiringPiI2CReadReg8(tem, 0);
+                int8_t value = wiringPiI2CReadReg8(tem, 0);
                 char val[64];
                 snprintf(val, sizeof(val), "%d", value);
                 lcdPuts(lcd,val);
