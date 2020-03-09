@@ -74,8 +74,6 @@ void getIP(char* outStr){ //task3
 int main()
 {
         task2();
-        printf("jtta\n");
- //       joeShit();
         return 0;
 }
 
