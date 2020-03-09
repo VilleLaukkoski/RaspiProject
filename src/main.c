@@ -15,9 +15,9 @@
 #define LCD_D5  22               //Data pin D5
 #define LCD_D6  21               //Data pin D6
 #define LCD_D7  14               //Data pin D7
-void task2();
+void task();
 void getIP(char* outStr);
-void task2(){
+void task(){
         char led[64][64] = {"HIGH","LOW"};
         int lcd;
         wiringPiSetup();
@@ -73,7 +73,7 @@ void getIP(char* outStr){ //task3
 }
 int main()
 {
-        task2();
+        task();
         return 0;
 }
 
