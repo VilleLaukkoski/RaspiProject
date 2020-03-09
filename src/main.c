@@ -44,7 +44,7 @@ void task(){
                 sleep(1);
         }
 }
-void getIP(char* outStr){ //task3
+void getIP(char* outStr){
     FILE *fp;
         char returnData[64];
         int count = 0;
