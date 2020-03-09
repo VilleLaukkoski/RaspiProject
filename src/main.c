@@ -15,7 +15,6 @@
 #define LCD_D5  22               //Data pin D5
 #define LCD_D6  21               //Data pin D6
 #define LCD_D7  14               //Data pin D7
-void task1();
 void task2();
 void getIP(char* outStr);
 void task2(){
@@ -72,16 +71,6 @@ void getIP(char* outStr){ //task3
         }
         pclose(fp);
 }
-/*void joeShit(){
-    int lcd;
-    wiringPiSetup();
-    lcd = lcdInit (2, 16, 4, LCD_RS, LCD_E, LCD_D4, LCD_D5, LCD_D6, LCD_D7, 0, 0, 0, 0);
-    lcdPosition(lcd, 0, 0);
-    lcdPuts(lcd,"LOOK JOE");
-    lcdPosition(lcd, 0, 1);
-    lcdPuts(lcd, "HACKERMAN");
-}
-*/
 int main()
 {
         task2();
