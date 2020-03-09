@@ -18,12 +18,11 @@
 void task();
 void getIP(char* outStr);
 void task(){
-        char led[64][64] = {"HIGH","LOW"};
         int lcd;
         wiringPiSetup();
         int tem = wiringPiI2CSetup (0x4a); 
         lcd = lcdInit (2, 16, 4, LCD_RS, LCD_E, LCD_D4, LCD_D5, LCD_D6, LCD_D7, 0, 0, 0, 0);
-        char p[64] = "1";
+        char p[64] = "000.000.000.000";
         getIP(p);
         while(1){
                 lcdClear(lcd);
